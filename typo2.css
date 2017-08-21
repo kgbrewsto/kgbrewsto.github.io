@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'robotica';
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #5D6063;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  text-align: center;
+  color: #FFF;
+}
+nav {
+  background-color: #54575A;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+nav li {
+  list-style-type: none;
+
+  width: 50%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+nav li:first-of-type,
+nav li:nth-of-type(2){
+  border-top: 1px solid white;
+}
+nav li:nth-of-type(2n) {
+  border: solid 1px grey;
+}
+
+nav a:link,
+nav a:visited {
+color: #888F95;
+  text-decoration: none;
+}
+
+nav a:link:hover,
+nav a:visited:hover,
+nav a:link:active,
+nav a:visited:active {
+  color: red;
+}
+nav a:link:after {
+  color: green;
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+}
+.selected {
+  color: blueviolet;
+}
+.hero {
+  padding: 40px;
+  background-color: red;
+}
+
+@media only screen and (min-width: 540px) {
+  body {
+    background-color:  aliceblue;
+  }
+}
+@media only screen and (min-width: 750px) {
+  body {
+    background-color:  burlywood;
+  }
+  nav ul li {
+    width: auto;
+  }
+}
